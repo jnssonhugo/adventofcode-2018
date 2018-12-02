@@ -8,7 +8,8 @@ public class Whatsinthebox {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter puzzle..\n");
-        BufferedReader reader = new BufferedReader(new FileReader(scanner.next()));
+        // Ugly
+        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Hugo\\IdeaProjects\\adventofcode-2018\\adventofcode-2018\\src\\_2\\puzzleinput.txt"));
         System.out.println("Checksum is : " + occurencesChecker(reader));
     }
 
